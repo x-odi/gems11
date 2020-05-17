@@ -8,10 +8,22 @@
 <body>
 
 <center>
+
+<?php
+$q1 =$_GET['q1'];
+if($q1== 1){ 
+  echo "User Name is taken";
+}  
+  $q2 =$_GET['q2'];
+if($q2== 1){ 
+  echo " The password does't match";
+}
+?>
+
 <form action="/gems11/fun/Reg.php" method="get">
   
   <label for="Uname">User Name:</label>
-  <input type="text" id="Uname" name="UserName" placeholder="Exp: Emad Faisal"> <br><br>
+  <input type="text" id="Uname" name="UserName" placeholder="Exp: You'r Name->Emad Faisal"> <br><br>
   
   <label for="Email">Offical Email:</label>
   <input type="Email" id="Email" name="Email" placeholder="Exp: Emad@gems-ksa.com"> <br><br>
@@ -31,7 +43,7 @@
   <input type="submit" value="Submit">
 </form>
 <a href="index.php"><button> Home Page </button> </a>
-<a href="login.php">  I Have Accunt</a>
+<a href="login.php">  I Have Account</a>
 
 
 </center>
