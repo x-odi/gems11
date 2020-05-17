@@ -12,6 +12,8 @@ while($row=$result->fetch_assoc()){
 }  
 //echo $count;
 if($count >0){ 
+  session_start();
+  $_SESSION['UserName-g']= $UserName_login ;
 header('Location:http://192.168.1.50:8280/gems11/index.php');
 }
 else{

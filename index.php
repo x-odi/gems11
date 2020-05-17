@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEMS-Emad</title>
     
+
+    <?php
+    session_start();
+    $UserName_login = $_SESSION[ 'UserName-g' ];
+  echo  $UserName_login ;
+   ?>
+
 </head>
 <body>
 <center>
