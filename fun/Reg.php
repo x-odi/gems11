@@ -8,7 +8,7 @@ $result=$conn->query($sql);
 while($row=$result->fetch_assoc()){ 
   $count= $result->num_rows;   
 }  
-if($count >0){ header('Location:http://192.168.1.50:8280/gems11/Reg.php?q1=1');
+if($count >0  ){ header('Location:http://192.168.1.50:8280/gems11/Reg.php?q1=1');
 exit();
 }
 $pass1=$_GET['pass1'];

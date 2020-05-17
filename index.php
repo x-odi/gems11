@@ -14,7 +14,7 @@
 </button>
 
 <button>
-    <a href="Reg.php"> Registration </a>
+    <a href="Reg.php?q1="> Registration </a>
 </button>
 
 <button>

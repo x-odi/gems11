@@ -11,12 +11,11 @@
 
 <?php
 $q1 =$_GET['q1'];
-if($q1== 1){ 
-  echo "User Name is taken";
+if ($q1 == 1){ 
+  echo "User Name already taken";
 }  
-  $q2 =$_GET['q2'];
-if($q2== 1){ 
-  echo " The password does't match";
+if ($q1 == 2){ 
+  echo "The password does't match";
 }
 ?>
 
