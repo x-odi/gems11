@@ -16,7 +16,7 @@
   
   <input type="submit" value="Submit">
 </form>
-<a href="index.php"><button> Back </button> </a>
+<a href="index.php"><button> Home </button> </a>
 <a href="Reg.php">  create an account</a>
 
 
