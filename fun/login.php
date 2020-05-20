@@ -14,9 +14,10 @@ while($row=$result->fetch_assoc()){
  // $Priv=$_GET['Priv'];
 }  
 //echo $count;
-if($count1 >0 /*&& $Priv =="client"*/){ 
+if($count1 >0 /*&& $Row["Priv"] =="client"*/){ 
   session_start();
   $_SESSION['UserName-g']= $UserName_login ;
+  $_SESSION['client'] = 'client';
 header('Location:http://192.168.1.50:8280/gems11/AllUser/funClient/Client.php');
 }
 else{
@@ -32,6 +33,7 @@ else{
  if($count2 >0){ 
    session_start();
    $_SESSION['UserName-g']= $UserName_login ;
+   $_SESSION['OpManger'] = 'OpManger';
  header('Location:http://192.168.1.50:8280/gems11/AllUser/funOpManger/OpManger.php');
  }
  else{
@@ -49,6 +51,7 @@ else{
    session_start();
    //$_SESSION[ 'count' ]= $count;
    $_SESSION['UserName-g']= $UserName_login ;  
+   $_SESSION['Supervisor'] = 'Supervisor';
  header('Location:http://192.168.1.50:8280/gems11/AllUser/funSupervisor/Supervisor.php');
  }
  else{

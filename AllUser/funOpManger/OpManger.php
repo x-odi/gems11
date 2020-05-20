@@ -1,3 +1,10 @@
+<?php session_start();
+if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'OpManger' ]!="OpManger"){
+    header('Location:http://192.168.1.50:8280/gems11');
+}
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +14,10 @@
 </head>
 
 <?php
-    session_start();
+    
     $UserName_login = $_SESSION[ 'UserName-g' ];
-  echo  $UserName_login ;
+    $Priv = $_SESSION[ 'OpManger' ];
+  echo  $UserName_login ;   echo  $Priv ;
    ?>
 
 <body>

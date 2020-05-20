@@ -1,3 +1,10 @@
+<?php session_start();
+if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'Supervisor' ]!="Supervisor"){
+    header('Location:http://192.168.1.50:8280/gems11');
+}
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +14,10 @@
 </head>
 
 <?php
-    session_start();
+    
     $UserName_login = $_SESSION[ 'UserName-g' ];
-    $count = $_SESSION[ 'count' ];
-
-  echo  $UserName_login ;   echo $count;
+    $Priv = $_SESSION[ 'Supervisor' ];
+  echo  $UserName_login ;   echo  $Priv ;
    ?>
 
 <body>
