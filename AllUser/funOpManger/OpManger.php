@@ -19,6 +19,11 @@ if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'OpManger' ]!="OpManger"){
     $Priv = $_SESSION[ 'OpManger' ];
   echo  $UserName_login ;   echo  $Priv ;
    ?>
+   <button>
+        <a href="../../index.php"> Home Page </a>
+    </button>
+
+<body>
 
 <body>
     

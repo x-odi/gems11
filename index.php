@@ -12,16 +12,22 @@
 <center>
     <h1> GEMS </h1>
     <?php
+    error_reporting(0);
     session_start();
     if (isSet($_SESSION[ 'UserName-g' ])){
         $UserName_login = $_SESSION[ 'UserName-g'];
-        echo  $UserName_login ;
+        $Priv = $_SESSION[ 'OpManger' ];
+        $Priv = $_SESSION[ 'Supervisor' ];
+        $Priv = $_SESSION[ 'client' ];
+        echo  $UserName_login ; 
         ?>
     <button id="Exit" onclick="myFunction(/*<php session_destroy()?>*/ ) ">
-    <a href=""> Logout </a>
+    <a href="login.php"> Logout </a>
         </button>
-        <?php
-// personal page button
+     <button>
+        <a href=" <?php if($Priv=='client') ?> /gems11/AllUser/funClient/Client.php"> Serves </a>
+    </button>
+ <?php
 }else
     {?>
         <button>

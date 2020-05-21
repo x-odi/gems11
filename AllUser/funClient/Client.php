@@ -1,6 +1,6 @@
 <?php session_start();
 if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'client' ]!="client"){
-    header('Location:http://192.168.1.50:8280/gems11');
+    header('Location:http://localhost:8280/gems11');
 }
    
 ?>
@@ -19,6 +19,10 @@ if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'client' ]!="client"){
     $Priv = $_SESSION[ 'client' ];
   echo  $UserName_login ;   echo  $Priv ;
    ?>
+
+<button>
+        <a href="../../index.php"> Home Page </a>
+    </button>
 
 <body>
     

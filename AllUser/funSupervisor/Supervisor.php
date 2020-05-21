@@ -19,6 +19,11 @@ if(isset($_SESSION[ 'UserName-g' ]) and $_SESSION[ 'Supervisor' ]!="Supervisor")
     $Priv = $_SESSION[ 'Supervisor' ];
   echo  $UserName_login ;   echo  $Priv ;
    ?>
+   <button>
+        <a href="../../index.php"> Home Page </a>
+    </button>
+
+<body>
 
 <body>
     
