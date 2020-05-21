@@ -18,7 +18,7 @@ if($count1 >0 /*&& $Row["Priv"] =="client"*/){
   session_start();
   $_SESSION['UserName-g']= $UserName_login ;
   $_SESSION['client'] = 'client';
-header('Location:http://192.168.1.50:8280/gems11/AllUser/funClient/Client.php');
+header('Location:http://localhost:8280/gems11/AllUser/funClient/Client.php');
 }
 else{
     //Opraion Manegar
@@ -34,7 +34,7 @@ else{
    session_start();
    $_SESSION['UserName-g']= $UserName_login ;
    $_SESSION['OpManger'] = 'OpManger';
- header('Location:http://192.168.1.50:8280/gems11/AllUser/funOpManger/OpManger.php');
+ header('Location:http://localhost:8280/gems11/AllUser/funOpManger/OpManger.php');
  }
  else{
      
@@ -52,10 +52,10 @@ else{
    //$_SESSION[ 'count' ]= $count;
    $_SESSION['UserName-g']= $UserName_login ;  
    $_SESSION['Supervisor'] = 'Supervisor';
- header('Location:http://192.168.1.50:8280/gems11/AllUser/funSupervisor/Supervisor.php');
+ header('Location:http://localhost:8280/gems11/AllUser/funSupervisor/Supervisor.php');
  }
  else{
-     header('Location:http://192.168.1.50:8280/gems11/login.php');
+     header('Location:http://localhost.50:8280/gems11/login.php');
   }
   }
  
