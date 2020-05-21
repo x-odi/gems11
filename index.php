@@ -17,7 +17,7 @@
         $UserName_login = $_SESSION[ 'UserName-g'];
         echo  $UserName_login ;
         ?>
-    <button id="Exit" onclick="myFunction(<?php session_destroy()?> ) ">
+    <button id="Exit" onclick="myFunction(/*<php session_destroy()?>*/ ) ">
     <a href=""> Logout </a>
         </button>
         <?php
