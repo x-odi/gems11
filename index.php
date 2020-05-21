@@ -6,27 +6,36 @@
     <title>GEMS-Emad</title>
     
 
-    <?php
-    session_start();
-    $UserName_login = $_SESSION[ 'UserName-g' ];
-  echo  $UserName_login ;
-   ?>
 
 </head>
 <body>
 <center>
     <h1> GEMS </h1>
-    <button>
-    <a href="login.php"> Login </a>
-</button>
-
-<button>
-    <a href="Reg.php?q1="> Registration </a>
-</button>
-
-<button>
+    <?php
+    session_start();
+    if (isSet($_SESSION[ 'UserName-g' ])){
+        $UserName_login = $_SESSION[ 'UserName-g'];
+        echo  $UserName_login ;
+        ?>
+    <button id="Exit" onclick="myFunction(<?php session_destroy()?> ) ">
     <a href=""> Logout </a>
-</button>
+        </button>
+        <?php
+// personal page button
+}else
+    {?>
+        <button>
+        <a href="login.php"> Login </a>
+    </button>
+    
+    <button>
+        <a href="Reg.php?q1="> Registration </a>
+    </button>
+<?php
+    }?>
+
+
+
 <br>
 <img src="pic/pic1.png" alt="No Pic">
 <br>
@@ -34,4 +43,6 @@
 
 </center>
 </body>
+
+
 </html>
