@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEMS-Emad</title>
@@ -45,7 +46,7 @@
 <br>
 <img src="pic/pic1.png" alt="No Pic">
 <br>
-<a href="https://www.gems-ksa.com/" target="_blank"> Offical Web Site OF GEMS </a>
+ <a href="https://www.gems-ksa.com/" target="_blank"> Offical Web Site OF GEMS </a>
 
 </center>
 </body>
