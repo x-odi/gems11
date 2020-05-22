@@ -1,4 +1,22 @@
 
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/pic/gr.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /*header {  background-image: url("/pic/gr.jpg");
   background-size: cover;
     background-repeat: no-repeat;
